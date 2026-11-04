@@ -14,7 +14,8 @@
 ---
 
 ## 📌 Overview
-This repository documents how I built an isolated cybersecurity lab using **Kali Linux** and **Oracle VirtualBox**. It records each step, the problems I met, and how I fixed them.
+This repository documents how I built an isolated cybersecurity lab using **Kali Linux** and **Oracle VirtualBox**. It records each step, the problems I met, and how I fixed them. The purpose of the lab is to create a controlled environment where cybersecurity tools network scanning,reconnaisance,vulnerability,assessment and other security testing activities can be performed safely and repeatedly
+The Lab is configured on private virtual network so that additional machines can be added and used as targets for authorised testing
 
 > ⚠️ **Disclaimer:** This lab is for education and authorized testing only.
 
@@ -24,11 +25,23 @@ This repository documents how I built an isolated cybersecurity lab using **Kali
 - ✅ Install and configure VirtualBox
 - ✅ Deploy a Kali Linux virtual machine
 - ✅ Install Guest Additions (clipboard, shared folders, resizing)
-- ✅ Document the work with Git and GitHub
-- ⬜ Add a vulnerable target VM
-- ⬜ Practice scanning with Nmap
+- ✅ Assign a consistent IP address to kali vm
+- ✅ Verify network connectivity and DNS resolution
+- ✅ Take a clean vm snapshort for recovery
+- ✅ Document the complete setup process
+- ✅ Prepare the environment for future cybersecurity projects
 
----
+## 🎯 Purpose of the lab
+The lab provides an isolated and controlled environment for cybersecurity learning and authorised testing.
+It can be used for activities such as
+- ✅ Network Reconnaissence
+- ✅ Port scanning
+- ✅ Vulnerability assessment
+- ✅ Packet analysis
+- ✅ Web security testing
+- ✅ Exploitation practice
+- ✅ Security tool experimentation
+
 
 ## 🧰 Requirements
 | Component | Details |
@@ -36,7 +49,8 @@ This repository documents how I built an isolated cybersecurity lab using **Kali
 | 💻 Host OS | Windows 11 |
 | 📦 Hypervisor | VirtualBox 7.2 |
 | 🐉 Guest OS | Kali Linux 2026.2 (amd64) |
-| 🧠 RAM | 4 GB |
+| 🧠 Host RAM | 8 GB |
+| 🧠 Kali RAM | 2048 MB |
 | ⚙️ CPU | 2 cores |
 | 💾 Disk | 50 GB |
 
@@ -82,12 +96,18 @@ Machine → Settings → Shared Folders → add `sf_shared`.
 | Adapter | Mode | Purpose |
 |---------|------|---------|
 | Adapter 1 | NAT | Internet access |
-| Adapter 2 | Host-Only | Isolated lab network |
+| Network Address | 10.0.0.0/24|  |
+| Kali IP address | 10.0.0.2/24|  |
+| Default gateway | 10.0.0.1 |  |
+| DNS Server |8.8.8.8 |  |
+| Future VM Range | 10.0.0.3 to 10.0.0.99 |  |
+
+
 
 ---
 
 ## 🛠️ Tools Used
-`Nmap` · `Wireshark` · `Metasploit` · `Burp Suite` · `Git`
+`virtual box` · `kali linux` 
 
 ---
 
@@ -116,15 +136,12 @@ Machine → Settings → Shared Folders → add `sf_shared`.
 
 ## 🗺️ Roadmap
 - [x] Week 1: Lab setup
-- [ ] Week 2: Add a vulnerable VM
-- [ ] Week 3: Network scanning
-- [ ] Week 4: Vulnerability assessment
+
 
 ---
 
 ## 📚 What I Learned
-Write 3 to 4 sentences in your own words about what you learned and what challenged you.
-i learnt how tp setup the lab using vitual box and kali linux. i had challenges on upgrading the kali nux but eventualy i managed as command prompt could not locate guest file
+i learnt how to setup the lab using vitual box and kali linux. i had challenges on upgrading the kali linux but eventualy i managed as command prompt could not locate guest file virtualbox-guest-x11
 ---
 
 ## 👤 Author
