@@ -1,60 +1,133 @@
-# Networkwalks-B0841-week1-Cybersecurity-lab-set-up
-# Kali Linux Lab Setup
+<h1 align="center">🛡️ Kali Linux Security Lab</h1>
 
-**Student:** Aubrey Membe
-**Course:** Cybersecurity lab setup / BO841
-**Date:** 4 November 2026
+<p align="center">
+  <i>A hands-on virtual lab for learning networking and ethical hacking</i>
+</p>
 
-## 1. Objective
-Set up a Kali Linux virtual machine in VirtualBox for security lab practice.
+<p align="center">
+  <img src="https://img.shields.io/badge/HYPERVISOR-VirtualBox-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/OS-Kali%20Linux-557C94?style=for-the-badge">
+  <img src="https://img.shields.io/badge/STATUS-In%20Progress-orange?style=for-the-badge">
+  <img src="https://img.shields.io/badge/LEVEL-Beginner-green?style=for-the-badge">
+</p>
 
-## 2. Environment
-| Item | Details |
-|------|---------|
-| Host OS | Windows 11 |
-| Hypervisor | Oracle VirtualBox 7.2 |
-| Guest OS | Kali Linux 2026.2 (amd64) |
-| RAM / CPU | 4 GB / 2 cores |
-| Disk | 50 GB dynamic |
-| Network | NAT |
+---
 
-## 3. Steps Performed
-1. Downloaded the Kali VirtualBox image from kali.org
-2. Imported the VM into VirtualBox
-3. Configured RAM, CPU and network adapter
-4. Booted the VM and updated the system:
-   ```
-   sudo apt update && sudo apt full-upgrade -y
-   ```
-5. Installed Guest Additions:
-   ```
-   sudo apt install -y --reinstall virtualbox-guest-x11 virtualbox-guest-utils
-   sudo reboot
-   ```
-6. Set up a shared folder (`sf_shared`)
-7. Created this Git repo to document the work
+## 📌 Overview
+This repository documents how I built an isolated cybersecurity lab using **Kali Linux** and **Oracle VirtualBox**. It records each step, the problems I met, and how I fixed them.
 
-## 4. Problems and Fixes
-| Problem | Cause | Fix |
-|---------|-------|-----|
-| `Unable to locate package virtualbox-guest` | Wrong package name and misplaced `reinstall` | Used `virtualbox-guest-x11` with `--reinstall` |
+> ⚠️ **Disclaimer:** This lab is for education and authorized testing only.
 
-## 5. Screenshots
+---
 
+## 🎯 Objectives
+- ✅ Install and configure VirtualBox
+- ✅ Deploy a Kali Linux virtual machine
+- ✅ Install Guest Additions (clipboard, shared folders, resizing)
+- ✅ Document the work with Git and GitHub
+- ⬜ Add a vulnerable target VM
+- ⬜ Practice scanning with Nmap
 
-![Kali desktop](screenshots/desktop.png)
+---
 
+## 🧰 Requirements
+| Component | Details |
+|-----------|---------|
+| 💻 Host OS | Windows 11 |
+| 📦 Hypervisor | VirtualBox 7.2 |
+| 🐉 Guest OS | Kali Linux 2026.2 (amd64) |
+| 🧠 RAM | 4 GB |
+| ⚙️ CPU | 2 cores |
+| 💾 Disk | 50 GB |
 
+---
 
+## 🏗️ Lab Architecture
+```
+┌──────────────────────────────┐
+│        Host (Windows)        │
+│  ┌────────────────────────┐  │
+│  │      VirtualBox        │  │
+│  │   ┌────────────────┐   │  │
+│  │   │  Kali Linux VM │   │  │
+│  │   └────────────────┘   │  │
+│  └────────────────────────┘  │
+└──────────────────────────────┘
+```
 
-![Guest Additions installed](screenshots/guest-additions.png)
+---
 
+## ⚙️ Installation Steps
 
+### Step 1: Import the VM
+Downloaded the Kali VirtualBox image from kali.org and imported it.
 
-## 6. Files in This Repo
-- `notes/` : command history, system info, package list
-- `configs/` : configuration files I edited
-- `screenshots/` : evidence of each step
+### Step 2: Update the system
+```bash
+sudo apt update && sudo apt full-upgrade -y
+```
 
-## 7. What I Learned
-Short paragraph in your own words.
+### Step 3: Install Guest Additions
+```bash
+sudo apt install -y --reinstall virtualbox-guest-x11 virtualbox-guest-utils
+sudo reboot
+```
+
+### Step 4: Configure a shared folder
+Machine → Settings → Shared Folders → add `sf_shared`.
+
+---
+
+## 🌐 Network Configuration
+| Adapter | Mode | Purpose |
+|---------|------|---------|
+| Adapter 1 | NAT | Internet access |
+| Adapter 2 | Host-Only | Isolated lab network |
+
+---
+
+## 🛠️ Tools Used
+`Nmap` · `Wireshark` · `Metasploit` · `Burp Suite` · `Git`
+
+---
+
+## 🧩 Troubleshooting
+| ❌ Problem | 🔍 Cause | ✅ Fix |
+|-----------|----------|--------|
+| `Unable to locate package virtualbox-guest` | Wrong package name | Used `virtualbox-guest-x11` |
+| No internet in VM | Adapter not set to NAT | Changed adapter to NAT |
+
+---
+
+## 📸 Screenshots
+| Kali Desktop | Guest Additions |
+|:---:|:---:|
+| 
+
+![desktop](screenshots/desktop.png)
+
+ | 
+
+![ga](screenshots/guest-additions.png)
+
+ |
+
+---
+
+## 🗺️ Roadmap
+- [x] Week 1: Lab setup
+- [ ] Week 2: Add a vulnerable VM
+- [ ] Week 3: Network scanning
+- [ ] Week 4: Vulnerability assessment
+
+---
+
+## 📚 What I Learned
+Write 3 to 4 sentences in your own words about what you learned and what challenged you.
+i learnt how tp setup the lab using vitual box and kali linux. i had challenges on upgrading the kali nux but eventualy i managed as command prompt could not locate guest file
+---
+
+## 👤 Author
+**Aubrey Membe **
+Course: NETWORKWALKS CYBERSECURITY B0841 WEEK 1 LAB SETUP
+GitHub: [mebeaubrey-eng](https://github.com/membeaubrey-eng)
