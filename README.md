@@ -7,8 +7,8 @@
 <p align="center">
   <img src="https://img.shields.io/badge/HYPERVISOR-VirtualBox-blue?style=for-the-badge">
   <img src="https://img.shields.io/badge/OS-Kali%20Linux-557C94?style=for-the-badge">
-  <img src="https://img.shields.io/badge/STATUS-In%20Progress-orange?style=for-the-badge">
-  <img src="https://img.shields.io/badge/LEVEL-Beginner-green?style=for-the-badge">
+  <img src="https://img.shields.io/badge/FORCUS-%20CYBERSECURITY-orange?style=for-the-badge">
+  <img src="https://img.shields.io/badge/ENVIRONMENT-LAB-green?style=for-the-badge">
 </p>
 
 ---
