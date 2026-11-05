@@ -121,52 +121,10 @@ Machine → Settings → Shared Folders → add `sf_shared`.
 
 ## 📸 Screenshots
 
-### 1. Kali Desktop
+![App Screenshot](./Screenshot%202026-11-04%20202956.png)
 
 
-![Kali desktop](https://github.com/membeaubrey-eng/Networkwalks-B0841-week1-Cybersecurity-lab-set-up/edit/main/README.md#:~:text=Screenshot%202026%2D11%2D04%20202956.png)
-
-
-
-### 2. Guest Additions Installed
-
-
-![Guest Additions](screenshots/guest-additions.png)
-
-
-
-### 3. Network Settings
-
-
-![Network settings](screenshots/network.png)
-
-
-
-### 4. Shared Folder
-
-
-![Shared folder](screenshots/shared-folder.png)
-
-
-
-### 5. System Update
-
-
-![System update](screenshots/update.png)
-
-
-
-### 6. Terminal Output
-
-
-![Terminal output](screenshots/terminal.png)
-
-
-
-### 7. Git Push
-
-
-![Git push](screenshots/git-push.png)
+Oracle Virtual box installation
 
 ## 🗺️ Roadmap
 - [x] Week 1: Lab setup
