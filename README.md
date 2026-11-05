@@ -124,7 +124,29 @@ Machine → Settings → Shared Folders → add `sf_shared`.
 ![App Screenshot](./Screenshot%202026-11-04%20202956.png)
 
 
-Oracle Virtual box installation
+Oracle Virtual box installation and Network settings
+
+
+![App Screenshot](./Screenshot%202026-11-04%20203427.png)
+
+
+![App Screenshot](./Screenshot%202026-11-04%20203919.png)
+
+
+![App Screenshot](./Screenshot%202026-11-04%20204256.png)
+
+
+![App Screenshot](./Screenshot%202026-11-04%20204400.png)
+
+
+![App Screenshot](./Screenshot%202026-11-04%20205357.png)
+
+
+
+![App Screenshot](./Screenshot%202026-11-05%20084150.png)
+
+
+kali linux Network settings
 
 ## 🗺️ Roadmap
 - [x] Week 1: Lab setup
