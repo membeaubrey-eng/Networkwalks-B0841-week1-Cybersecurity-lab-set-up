@@ -148,6 +148,13 @@ Oracle Virtual box installation and Network settings
 
 kali linux Network settings
 
+
+![App Screenshot](./Screenshot%202026-11-05%20115556.png)
+
+
+
+![App Screenshot](./Screenshot%202026-11-05%20121736.png)
+
 ## 🗺️ Roadmap
 - [x] Week 1: Lab setup
 
